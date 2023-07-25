@@ -28,11 +28,9 @@ class MainActivity : AppCompatActivity() {
                     .isNullOrEmpty()
             ) 0 else firstNumEditText.text.toString().toInt()
 
-
             val num2 =
                 if (secNumEditText.text.toString().isNotEmpty()) secNumEditText.text.toString()
                     .toInt() else 0
-
             val res = num1 + num2
 
             addTextView.text = res.toString()
